@@ -1,0 +1,17 @@
+{
+  "name": "@cookiex/dot-object",
+  "version": "0.0.0",
+  "description": "Tool to manipulate object by dot string",
+  "main": "dist/index.js",
+  "repository": "https://github.com/dev-cookiex/dot-object.git",
+  "author": "Tony <tony.js@zoho.eu>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist; tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
