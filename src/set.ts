@@ -1,13 +1,13 @@
-import fill from "./fill"
+import { fill } from "./fill"
 
-const set: {
+export interface set {
   ( path: string, object: any, value: any ): any
   ( map: { [key: string]: any }, object: any ): any
-  in: {
-    ( path: string, object: any, value: any ): any
-    ( map: { [key: string]: any }, object: any ): any
-  }
-} = ( path: string | { [key: string]: any }, object: any, value?: any ) => {
+  in( path: string, object: any, value: any ): any
+  in( map: { [key: string]: any }, object: any ): any
+}
+
+export const set: set = ( path: string | { [key: string]: any }, object: any, value?: any ) => {
   const target = Object.assign( {}, object )
 
   set.in( path as any, target, value )
@@ -26,5 +26,3 @@ set.in = ( path: string | { [key: string]: any }, target: any, value?: any ) => 
 
   return target
 }
-
-export default set

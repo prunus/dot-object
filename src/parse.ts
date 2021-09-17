@@ -1,6 +1,6 @@
 import { blacklistFilter } from "./constants"
 
-const parse = {
+export const parse = {
   path: ( path: string ) => {
     const parts = path.replace( /\.?\[/g, '.' ).replace( /\]/g, '' ).split( /\.|\[/ )
     if ( parts.some( blacklistFilter ) )
@@ -8,5 +8,3 @@ const parse = {
     return parts
   }
 }
-
-export default parse

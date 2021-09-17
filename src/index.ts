@@ -1,6 +1,6 @@
-import dotObject from './object'
-import dotPick from './pick'
-import dotSet from './set'
+import { object as dotObject } from './object'
+import { pick as dotPick } from './pick'
+import { set as dotSet } from './set'
 
 namespace dot {
   export const object = dotObject

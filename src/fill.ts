@@ -1,7 +1,7 @@
-import is from './is'
-import parse from './parse'
+import { is } from './is'
+import { parse } from './parse'
 
-const fill = ( path: string, target: any, value: any ) => {
+export const fill = ( path: string, target: any, value: any ) => {
   const parts = parse.path( path )
   parts.reduce( ( last, key, i, parts ) => {
 
@@ -18,5 +18,3 @@ const fill = ( path: string, target: any, value: any ) => {
   }, target )
   return target
 }
-
-export default fill
