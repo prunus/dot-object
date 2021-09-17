@@ -1,6 +1,6 @@
 {
   "name": "@cookiex/dot-object",
-  "version": "0.0.1-b0e86f9.0",
+  "version": "0.0.1-40e1502",
   "description": "Tool to manipulate object by dot string",
   "main": "dist/index.js",
   "repository": "https://github.com/dev-cookiex/dot-object.git",
